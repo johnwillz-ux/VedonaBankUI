@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:vedona/sections/fourthsection.dart';
 import 'package:vedona/sections/secondsection.dart';
 import 'package:vedona/widget/AppButton.dart';
 
 import '../sections/firstsection.dart';
 import '../sections/thirdsection.dart';
+import '../util/NavIcons.dart';
 import '../util/cards.dart';
 import '../util/overview_cards.dart';
 
@@ -76,41 +78,7 @@ class _HomePageState extends State<HomePage> {
 
 
 
-
-
-              Container(
-                height: 250,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
-                ),
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: const [
-                          Text(
-                            'Transactions',
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 18),
-                          ),
-                        ],
-                      ),
-                    ),
-
-
-                    Expanded(
-                        child: Row(
-
-                        ),
-                    )
-                  ],
-                ),
-              ),
+              FourthSection(),
 
 
 
@@ -122,16 +90,18 @@ class _HomePageState extends State<HomePage> {
       ),
 
       bottomNavigationBar: NavigationBarTheme(
-        data: NavigationBarThemeData(
-          indicatorColor: Colors.black26
+        data: const NavigationBarThemeData(
+          indicatorShape: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
+          indicatorColor: Colors.black26,
+          backgroundColor: Colors.white,
         ),
         child: NavigationBar(
-          destinations: [
-            const NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-            const NavigationDestination(icon: Icon(Icons.account_balance), label: 'Accounts'),
-            const NavigationDestination(icon: Icon(Icons.credit_card_sharp), label: 'Cards'),
-            const NavigationDestination(icon: Icon(Icons.payments), label: 'Payments'),
-            const NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
+          destinations: const [
+            NavigationDestination(icon: Icon(VedonaIcons.home, size: 20,), label: 'Home'),
+            NavigationDestination(icon: Icon(VedonaIcons.accounts,size: 20,), label: 'Accounts'),
+            NavigationDestination(icon: Icon(VedonaIcons.cards,size: 20,), label: 'Cards'),
+            NavigationDestination(icon: Icon(VedonaIcons.payment,size: 20,), label: 'Payments'),
+            NavigationDestination(icon: Icon(VedonaIcons.profile,size: 20,), label: 'Profile'),
           ],
         ),
       ),

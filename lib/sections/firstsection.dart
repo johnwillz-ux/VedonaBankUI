@@ -21,10 +21,22 @@ class FirstSection extends StatelessWidget {
             'Current Balance',
             style: TextStyle(color: Colors.white),
           ),
-          const Text(
-            '\$100,000,000.00',
-            style: TextStyle(
-                fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+
+          SizedBox(height: 7,),
+          Row(
+
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                '\$100,000,000.00',
+                style: TextStyle(
+                    fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+              ),
+              
+              SizedBox(width: 7,),
+              
+              Icon(Icons.visibility_off_outlined, color: Colors.white,)
+            ],
           ),
           const SizedBox(
             height: 10,
