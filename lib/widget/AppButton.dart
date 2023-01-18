@@ -6,14 +6,15 @@ class AppButton extends StatelessWidget {
   final Color BorderColor;
   final Color TextColor;
   final String TextHint;
+  final VoidCallback onPressed;
 
 
-  const AppButton({Key? key, required this.BackgroundColor, required this.BorderColor, required this.TextColor, required this.TextHint}) : super(key: key);
+  const AppButton({Key? key, required this.BackgroundColor, required this.BorderColor, required this.TextColor, required this.TextHint, required this.onPressed}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: null,
+      onPressed: onPressed,
       style: ButtonStyle(
           foregroundColor:
           MaterialStateProperty.all(TextColor),

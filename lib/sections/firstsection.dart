@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vedona/widget/transfer_money_button.dart';
 
 import '../widget/AppButton.dart';
 
@@ -22,12 +23,12 @@ class FirstSection extends StatelessWidget {
             style: TextStyle(color: Colors.white),
           ),
 
-          SizedBox(height: 7,),
+          const SizedBox(height: 7,),
           Row(
 
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
+            children: const [
+              Text(
                 '\$100,000,000.00',
                 style: TextStyle(
                     fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
@@ -43,20 +44,18 @@ class FirstSection extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              AppButton(
-                  BackgroundColor: Colors.white,
-                  BorderColor: Colors.white,
-                  TextColor: Colors.black,
-                  TextHint: 'Transfer Money'),
-              SizedBox(
+            children:  [
+
+              const TransferMoneyButton(),
+              const SizedBox(
                 width: 10,
               ),
               AppButton(
                   BackgroundColor: Colors.transparent,
                   BorderColor: Colors.white,
                   TextColor: Colors.white,
-                  TextHint: 'Add Money')
+                  TextHint: 'Add Money',
+                onPressed: () {},)
             ],
           ),
         ],

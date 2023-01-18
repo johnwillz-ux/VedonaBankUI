@@ -5,10 +5,9 @@ class FourthSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return               Container(
+    return Container(
       height: 250,
-      padding:
-      const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: Colors.white,
@@ -22,17 +21,26 @@ class FourthSection extends StatelessWidget {
               children: const [
                 Text(
                   'Transactions',
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 18),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                 ),
               ],
             ),
           ),
-
-
           Expanded(
-            child: Row(
-
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                Image(
+                  image: AssetImage(
+                    'lib/images/empty.png',
+                  ),
+                  height: 150,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Text('No Available Transaction'),
+              ],
             ),
           )
         ],

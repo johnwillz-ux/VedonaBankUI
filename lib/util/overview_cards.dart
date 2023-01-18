@@ -12,7 +12,7 @@ class _OverviewCardsState extends State<OverviewCards> {
   List overviewCards = [
     ['Transactions', Colors.purple, '102'],
     ['Total Spent', Colors.brown, '\$200,000'],
-    ['Total Income', Colors.deepOrange, '\$50,000'],
+    ['Total Income', Colors.red, '\$50,000'],
   ];
 
   @override
@@ -20,7 +20,7 @@ class _OverviewCardsState extends State<OverviewCards> {
     return GridView.builder(
 
       itemCount: overviewCards.length,
-        padding: EdgeInsets.only(top: 5),
+        padding: const EdgeInsets.only(top: 5),
         gridDelegate:
             const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3,
             childAspectRatio: 1.2,),
