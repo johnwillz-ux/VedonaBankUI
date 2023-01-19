@@ -1,3 +1,3 @@
 # BANK UI APP
 
-![smarthome](bankui.jpeg)
+![smarthome](bankingui.jpeg)
