@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widget/AppButton.dart';
+import '../widget/appbutton.dart';
 
 class ThirdSection extends StatelessWidget {
   const ThirdSection({Key? key}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vedona/widget/transfer_money_button.dart';
 
-import '../widget/AppButton.dart';
+import '../widget/appbutton.dart';
 
 class FirstSection extends StatelessWidget {
   const FirstSection({Key? key}) : super(key: key);

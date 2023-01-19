@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:vedona/widget/AppButton.dart';
+import 'package:vedona/widget/appbutton.dart';
 
 class TransferMoneyButton extends StatelessWidget {
   const TransferMoneyButton({
