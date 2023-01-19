@@ -1,3 +1,3 @@
-# SMART HOME APP
+# BANK UI APP
 
 ![smarthome](bankui.jpeg)
