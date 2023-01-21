@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                           const BorderSide(color: Colors.grey, width: 1),
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    hintText: 'Search transactions',
+                    hintText: 'Search transactions ',
                     border: const OutlineInputBorder(),
                     filled: true,
                     fillColor: Colors.white,
