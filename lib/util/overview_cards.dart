@@ -18,6 +18,7 @@ class _OverviewCardsState extends State<OverviewCards> {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+        physics: const NeverScrollableScrollPhysics(),
 
       itemCount: overviewCards.length,
         padding: const EdgeInsets.only(top: 5),
